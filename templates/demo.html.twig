@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Hi there</h1>
+    <div id="route" data-route="{{ asset("dist/vue/example.vue") }}" data-name="example" data-id="1">
+        <div id="example"></div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ asset('vue.js') }}"></script>
+{% endblock %}
