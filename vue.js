@@ -1,5 +1,6 @@
 import Vue from "vue/dist/vue.esm.js";
 import App from './dist/app.vue';
+import '@babel/polyfill';
 
 // Fetch data from data attributes
 

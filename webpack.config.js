@@ -72,19 +72,19 @@ const webpackConfig = {
         new CleanWebpackPlugin(),
         new VueLoaderPlugin()
     ],
-    optimization: {
-        moduleIds: 'deterministic',
-        runtimeChunk: "single",
-        splitChunks: {
-            cacheGroups: {
-                vendor: {
-                    test: /[\\/]node_modules[\\/]/,
-                    name: 'vendors',
-                    chunks: 'all',
-                }
-            }
-        }
-    },
+    // optimization: {
+    //     moduleIds: 'deterministic',
+    //     runtimeChunk: "single",
+    //     splitChunks: {
+    //         cacheGroups: {
+    //             vendor: {
+    //                 test: /[\\/]node_modules[\\/]/,
+    //                 name: 'vendors',
+    //                 chunks: 'all',
+    //             }
+    //         }
+    //     }
+    // },
     devtool: 'inline-source-map'
 };
 
